@@ -72,3 +72,38 @@ let arrIndex = Arr1.indexOf('ps')
 
 arrIndex === -1 ? console.log('item not in array') : console.log('item is in the array at index: ', arrIndex)
 //getting last index of an array
+const numbers = [1, 2, 3, 4, 5, 3, 1, 2]
+//using the lastIndexOf function
+//lastIndexOf gives the index position of the element being refered to else it gives -1
+console.log('the last index of 5 is:', numbers.lastIndexOf(5))
+//checking if an item exists in an array using includes
+//it returns true if it exists else false
+
+console.log('is 5 in the array?: ', numbers.includes(5))
+//checking array using isArray(), returns true if is array else false
+console.log('is numbers an array?: ', Array.isArray(numbers))
+//converting array to string using toString()
+console.log('the string version of numbers array', numbers.toString())
+const names = ['wanjiru', 'mogaka', 'muthokoi', 'wainanina']
+let new_names = names.toString()
+console.log(new_names)
+//joining array elements
+//using join - it joins elements of the array & returns a string ,
+//by default it joins with a comma but another string parameter 
+//can be passed and used to join the items
+const numbers_t = [1, 2, 3, 4, 5]
+console.log('joining the numbers_t array items', numbers_t.join())
+//using a space
+console.log('joining the numbers_t array items', numbers_t.join(' '))
+//using a comma and a space
+console.log('joining the numbers_t array items', numbers_t.join(', '))
+//slice array elemments (to cut out multiple items in a range)
+// slice takes two parameters starting and ending point, it doesnt include ned position
+console.log(numbers_t.slice(1, 4))
+//
+
+
+
+
+
+
