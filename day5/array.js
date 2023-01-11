@@ -98,9 +98,50 @@ console.log('joining the numbers_t array items', numbers_t.join(' '))
 //using a comma and a space
 console.log('joining the numbers_t array items', numbers_t.join(', '))
 //slice array elemments (to cut out multiple items in a range)
-// slice takes two parameters starting and ending point, it doesnt include ned position
+// slice takes two parameters starting and ending point, it does'nt include the end  position
 console.log(numbers_t.slice(1, 4))
-//
+//adding item to an array using push
+const my_array = [20, 23, 45, 30]
+my_array.push(101) 
+console.log(my_array)
+//removing an item at the end using pop
+my_array.pop()
+console.log(my_array)
+//removing an element from the beginning using shift
+my_array.shift()
+console.log(my_array)
+//adding an element from beginning using unshift
+my_array.unshift(67)
+console.log(my_array)
+//reversing an array using reverse
+my_array.reverse()
+console.log(my_array)
+//sorting an array
+const alphabet = ['c', 'e', 'a', 'f', 'b', 'd', 'i', 'h', 'g']
+console.log(alphabet)
+alphabet.sort()//sorts in order
+console.log(alphabet)
+alphabet.reverse()
+console.log(alphabet)
+// array of arrays - an array within an array
+const first_nums = [1,2,3,4,5]
+const sec_nums = [6, 7, 8, 9, 10]
+const full_list = [first_nums, sec_nums]
+console.log(full_list[0])
+const companIes = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle','Amazon']
+//printing number of elements in companIes
+console.log('number of companies is:', companIes.length)
+//printing the first item
+console.log(companIes[0])
+//the middle company
+console.log(companIes[3])
+//to uppercase
+const uppercasedArray = String(companIes).toUpperCase().split(",  ")
+console.log(uppercasedArray)
+
+
+
+
 
 
 
