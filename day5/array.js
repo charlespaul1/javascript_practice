@@ -138,8 +138,27 @@ console.log(companIes[3])
 //to uppercase
 const uppercasedArray = String(companIes).toUpperCase().split(",  ")
 console.log(uppercasedArray)
+const shoppingCart = ['waru', 'tissue', 'toothpaste', 'cooking oil', 'chapati']
+shoppingCart.push('soda madiaba')
+console.log(shoppingCart)
 
-
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+//sorting the ages
+console.log(ages.sort())
+//finding the median
+//step 1
+// find the mid point
+const midpoint = Math.floor(ages.length/2)
+console.log(midpoint)
+const median = ages.length % 2 === 1 ? ages[midpoint]: (ages[midpoint -1] + ages[midpoint]) / 2;
+console.log(median)
+//finding the average
+let total = 0
+for (var i = 0; i < ages.length; i++) {
+    total = total + ages[i];
+}
+const average = total / ages.length;
+console.log(average)
 
 
 
