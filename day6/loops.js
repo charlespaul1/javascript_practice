@@ -25,7 +25,4 @@ for (let i = 0; i <= 100; i++){
     if (i % 2 == 0)
     document.write(i + ' ')
 }
-//iteratiing 0 to 100 & printing prime numbers
-for (let i = 0; i <= 100; i++){
-    if 
-}
+const rands = [];
