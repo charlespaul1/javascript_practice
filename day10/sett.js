@@ -27,8 +27,18 @@ let B = new Set(b)
 let C = new Set(c)
 console.log(C)
 // find intersection 
-let m = [...a]
-let n = [...b]
-let o = m.filter((num) => n.has(num))
-let p = new Set(o)
+// let m = [...a]
+// let n = [...b]
+// let o = m.filter((num) => !n.has(num))
+// let p = new Set(o)
 // Create a map of countries and number of characters of a country
+countries = [
+    ['Kenya', 'Nairobi'],
+    ['Sudan', 'Khartoum'],
+    ['Egypt', 'Cairo'],
+  ]
+
+const countriesMap = new Map(countries)
+console.log(countriesMap)
+// finding the size of the map created
+console.log(countriesMap.size)
