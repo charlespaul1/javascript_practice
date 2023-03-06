@@ -42,3 +42,6 @@ const countriesMap = new Map(countries)
 console.log(countriesMap)
 // finding the size of the map created
 console.log(countriesMap.size)
+// adding values to the map
+countriesMap.set('Finland', 'Helsinki')
+console.log(countriesMap)
