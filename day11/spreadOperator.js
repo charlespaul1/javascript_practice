@@ -25,3 +25,23 @@ const countries = [['Nigeria', 'Lagos'], ['Ghana', 'Accra'], ['Kenya', 'Nairobi'
 for (let[Country, City] of countries){
     console.log(Country, City)
 }
+// destructuring an object
+const person = {
+    name: 'Charlespaul',
+    age: 24,
+    height: "6'3",
+    nationality: 'Kenyan'
+}
+let {name, age, height, nationality} = person
+console.log(name, age, height,)
+// object parameter destructuring
+const rectangle = {
+    length: 13,
+    width: 14
+}
+// function for calculating the perimeter
+const perimeter = ({length, width}) => {
+    return 2 * (length + width)
+}
+
+console.log(perimeter(rectangle));
