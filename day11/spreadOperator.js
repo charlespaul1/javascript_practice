@@ -56,3 +56,16 @@ console.log(premierLeague);
 
 const fullStackDev = [...frontEnd, ...backEnd]
 console.log(fullStackDev);
+
+// using spread operator to copy an object
+const user = {
+    name: 'Charlespaul Wabomba',
+    title: 'Programmer',
+    country: 'Kenya',
+    city: 'Kisumu'
+}
+ let copiedUser = {...user}
+ console.log(copiedUser)
+//  modifying the object while coping
+let newCopiedUser = {...user,  city: 'Bungoma'}
+console.log(newCopiedUser)
