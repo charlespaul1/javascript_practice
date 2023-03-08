@@ -138,8 +138,14 @@ const users = [
 {
   name:'Thomas',
   scores:90,
-  skills:['HTM', 'CSS', 'JS'],
+  skills:['HTM', 'CSS', 'JS', 'react'],
   age:20
 }
 ]
-// Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.
+// Iterate through the users array and get all the keys of the object using destructuring
+users.forEach(({name, scores, skills, age}) => {
+    console.log(Object.keys({name, scores, skills, age}));
+  });
+// Find the persons who have less than two skills
+const lessThan2 = users.filter(user => user.skills.length < 2);
+console.log(lessThan2);
