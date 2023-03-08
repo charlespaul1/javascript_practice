@@ -45,3 +45,14 @@ const perimeter = ({length, width}) => {
 }
 
 console.log(perimeter(rectangle));
+//  using spread operator to get the rest of array elements
+const teams = ['Arsenal', 'Man City', 'Man U', 'Tottenham', 'liverpool', 'Newcastle', ' fulham', 'brighton', 'brentford', 'chelsea']
+
+let [one, two, three, ...rem] = teams
+console.log(three, rem);
+// using spread operator to copy an array
+let premierLeague = [...teams]
+console.log(premierLeague);
+
+const fullStackDev = [...frontEnd, ...backEnd]
+console.log(fullStackDev);
