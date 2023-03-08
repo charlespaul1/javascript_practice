@@ -32,19 +32,19 @@ const person = {
     height: "6'3",
     nationality: 'Kenyan'
 }
-let {name, age, height, nationality} = person
-console.log(name, age, height,)
+let {name, age, hight, nationality} = person
+console.log(name, age, hight,)
 // object parameter destructuring
 const rectangle = {
     length: 13,
     width: 14
 }
 // function for calculating the perimeter
-const perimeter = ({length, width}) => {
+const Perimeter = ({length, width}) => {
     return 2 * (length + width)
 }
 
-console.log(perimeter(rectangle));
+console.log(Perimeter(rectangle));
 //  using spread operator to get the rest of array elements
 const teams = ['Arsenal', 'Man City', 'Man U', 'Tottenham', 'liverpool', 'Newcastle', ' fulham', 'brighton', 'brentford', 'chelsea']
 
@@ -69,3 +69,77 @@ const user = {
 //  modifying the object while coping
 let newCopiedUser = {...user,  city: 'Bungoma'}
 console.log(newCopiedUser)
+// using spread operator in arrow function
+
+const sumOfNumbers = (...args) => {
+    let sum = 0;
+    for ( let number of args){
+        sum += number
+    }
+    return sum 
+}
+
+console.log(sumOfNumbers(2,3,4,5,6,7,8,9,0,7,7,4,242));
+
+const constants = [2.72, 3.14, 9.81, 37, 100]
+// Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.
+const [e, pi, gravity, humanBodyTemp, waterBoilingTemp] = constants
+console.log(pi, waterBoilingTemp);
+const Countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
+// Destructure and assign the elements of countries array to fin, est, sw, den, nor
+const [fin, est, sw, den, nor] = Countries
+console.log(den);
+const Rectangle = {
+  width: 20,
+  height: 10,
+  area: 200,
+  perimeter: 60
+}
+// Destructure the rectangle object by its properties or keys.
+let {width, height, area, perimeter} = Rectangle
+console.log(area);
+const users = [
+{
+  name:'Brook',
+  scores:75,
+  skills:['HTM', 'CSS', 'JS'],
+  age:16
+},
+{
+  name:'Alex',
+  scores:80,
+  skills:['HTM', 'CSS', 'JS'],
+  age:18
+},
+{
+  name:'David',
+  scores:75,
+  skills:['HTM', 'CSS'],
+  age:22
+},
+{
+  name:'John',
+  scores:85,
+  skills:['HTML'],
+  age:25
+},
+{
+  name:'Sara',
+  scores:95,
+  skills:['HTM', 'CSS', 'JS'],
+  age: 26
+},
+{
+  name:'Martha',
+  scores:80,
+  skills:['HTM', 'CSS', 'JS'],
+  age:18
+},
+{
+  name:'Thomas',
+  scores:90,
+  skills:['HTM', 'CSS', 'JS'],
+  age:20
+}
+]
+// Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.
