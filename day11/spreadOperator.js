@@ -149,3 +149,28 @@ users.forEach(({name, scores, skills, age}) => {
 // Find the persons who have less than two skills
 const lessThan2 = users.filter(user => user.skills.length < 2);
 console.log(lessThan2);
+// A junior developer structure student name, skills and score in array of arrays which may not easy to read. 
+// Destructure the following array name to name, skills array to skills, scores array to scores, 
+// JavaScript score to jsScore and React score to reactScore variable in one line.
+
+const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
+const [Name, skills, [,,jsScore, reactScore]] = student
+console.log(Name,' ', jsScore, reactScore);
+
+// Write a function called convertArrayToObject which can convert the array to a structure object.
+const students = [
+  ['David', ['HTM'
+, 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+  ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+]
+const convertArrayToObject = (theArray) =>{
+  const thArray = [];
+  const obj = {};
+  theArray.forEach(
+    (students) =>{
+      const [name, skills, score] = students;
+      obj[name] = {skills, score};
+    });
+    return obj;
+}
+console.log(convertArrayToObject(students));
